@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#e1e1e1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myeongjo_extra"
+        android:text="세부정보"
+        android:textSize="40sp"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.5"
+        android:fontFamily="@font/myeongjo_bold"
+        android:text="데이터베이스에서 받아오는 것을 구현해야 함. 아이고 개발 힘들다. 상금 받으면 다 내 거!!"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/acceptshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/myeongjo_bold"
+        android:text="연락하기"
+        android:textSize="20sp"/>
+</LinearLayout>

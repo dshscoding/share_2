@@ -1,11 +1,15 @@
 package com.example.share;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.share.R;
 
@@ -56,6 +60,15 @@ public class shareadapter extends BaseAdapter {
         tag2_txt.setText(mData.get(position).Tag2);
         TextView tag3_txt = (TextView) convertView.findViewById(R.id.tag3_txt);
         tag3_txt.setText(mData.get(position).Tag3);
+        Button btn=(Button)convertView.findViewById(R.id.checkdetail);
+        btn.setOnClickListener(new Button.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(mContext,sendshare.class);
+                mContext.startActivity(intent);
+            }
+        });
         return convertView;
     }
 }

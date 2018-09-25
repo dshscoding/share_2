@@ -3,6 +3,7 @@ package com.example.share;
 import android.app.Application;
 
 public class claimshare extends Application {
+
     String Time;
     String Sharename;
     String Tag1;
